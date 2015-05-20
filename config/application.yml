@@ -1,0 +1,20 @@
+defaults: &defaults
+  host: example.com
+  port: 80
+
+development:
+  <<: *defaults
+  host: example.com
+  port: 3000
+
+test:
+  <<: *defaults
+  host: example.com
+  port: 3000
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  host: open.dji.com
