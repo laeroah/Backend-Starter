@@ -17,4 +17,4 @@ staging:
 
 production:
   <<: *defaults
-  host: open.dji.com
+  host: example.com

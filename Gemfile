@@ -67,6 +67,9 @@ gem 'rack-cors', require: 'rack/cors'
 # xml处理
 gem 'nokogiri'
 
+# javascript相关
+gem "bower-rails", "~> 0.9.2"
+
 group :production, :staging do
   # http服务
   gem 'puma'
@@ -94,10 +97,14 @@ group :development, :test do
   gem 'pry-rails'
 
   # 服务自动更新
-  # gem 'guard'
+  gem 'guard'
+  gem 'guard-rails'
+  gem 'guard-livereload'
+  gem 'guard-bundler'
+  gem 'guard-migrate'
 
   # 邮件本地测试
-  # gem 'letter_opener'
+  gem 'letter_opener'
 end
 
 group :test do
